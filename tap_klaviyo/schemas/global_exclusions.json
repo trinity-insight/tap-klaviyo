@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "timestamp": {
-      "type": "string"
+      "type": "integer"
     },
     "reason": {
       "type": "string"
