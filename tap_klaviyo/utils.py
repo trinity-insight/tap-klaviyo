@@ -55,7 +55,7 @@ def get_latest_event_time(events):
 def authed_get(source, url, params):
     with metrics.http_request_timer(source) as timer:
         resp = session.request(method='get', url=url, params=params)
-        timer.tags[metrics.Tag.http_status_code] = resp.status_code
+        # timer.tags[metrics.Tag.http_status_code] = resp.status_code
         return resp
 
 
